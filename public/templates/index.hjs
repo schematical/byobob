@@ -1,0 +1,9 @@
+{{> _header }}
+    {{> _navbar }}
+    {{# accounts }}
+        {{> _account }}
+    {{/ accounts }}
+
+    {{> _modal }}
+    {{> _meta_footer }}
+{{> _footer }}

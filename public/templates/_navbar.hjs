@@ -1,0 +1,62 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+
+    <div class="navbar-inner">
+
+        <div class="container">
+
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <i class="icon-cog"></i>
+            </a>
+
+            <a class="brand" href="/">
+               Boosley.co <sup>Beta</sup>
+            </a>
+
+            <div class="nav-collapse">
+                <ul class="nav pull-right">
+                    {{# user }}
+                    <li class="">
+                        <div class="btn-group">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                               {{ email }}
+                                <span class="caret"></span>
+                            </a>
+
+                            <ul class="dropdown-menu">
+                                <li class="">
+                                    <a href='/edit'>
+                                        Edit Profile
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    {{/ user }}
+                    {{^ user }}
+                    <!--<li class="">
+                        <a href="/register" class="">
+                            Create an Account
+                        </a>
+
+                    </li>-->
+                    <li class="">
+                        <a href="http://sethjbraddock.wix.com/boozely" class="">
+                           About
+                        </a>
+
+                    </li>
+
+                    {{/ user }}
+                </ul>
+
+            </div>
+            <!--/.nav-collapse -->
+
+        </div>
+        <!-- /container -->
+
+    </div>
+    <!-- /navbar-inner -->
+
+</div> <!-- /navbar -->

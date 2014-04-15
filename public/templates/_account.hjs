@@ -1,0 +1,25 @@
+<div class='row section' >
+    <div class='section-inner'></div>
+    <div class='section-inner-bkgd' style='background-image: url("/uploads/{{ bkgd_image }}");'></div>
+
+    <div class='span10 offset2'>
+        <div class='row-fluid' style='min-height:200Px;padding-top:55Px;'>
+            <div class='span4'>
+                <h1>{{ name }}</h1>
+                <h2 class='active_date' data-date='{{ active_date }}'></h2>
+            </div>
+            <div class='span7 offset 1'>
+                {{{ notes_rendered }}}
+            </div>
+        </div>
+        <div class='row-fluid'>
+            <div class='span10 offset1'>
+                {{# _medias }}
+                <a href='{{ images.standard_resolution.url }}' data-caption='{{ caption.text }}' class='lnk-img'>
+                    <img width='50Px' src="{{ images.thumbnail.url }}" class="img-polaroid">
+                </a>
+                {{/ _medias }}
+            </div>
+        </div>
+    </div>
+</div>

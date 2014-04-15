@@ -1,0 +1,20 @@
+{
+    "app_name":"byobob",
+    "models":{
+        "section":{
+            "fields":{
+                "name":"string",
+                "desc":"md",
+                "image":"s3-asset"
+            }
+        },
+        "product":{
+            "fields":{
+                "name":"string",
+                "desc":"md",
+                "url":"string",
+                "weight":"number"
+            }
+        }
+    }
+}

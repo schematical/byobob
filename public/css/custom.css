@@ -1,0 +1,78 @@
+/*------------------------------------------------------------------
+
+[Custom Stylesheet]
+
+
+Last change:	03/25/2013
+Assigned to:	You
+
+-------------------------------------------------------------------*/
+body{
+
+}
+.section{
+    /*    position:absolute;
+        left:0;
+        top:0;*/
+    /* content: url('path/to/image.ext');*/
+
+    display: block;
+    position:relative;
+    min-height: 400Px;
+
+}
+.section-inner-bkgd {
+
+    opacity:.6;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -10;
+    background-size: cover;
+    background-position-y: -697Px;
+}
+.section-inner {
+
+    opacity:0.3;
+
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -5;
+}
+.section:hover .section-inner{
+    opacity:0.7;
+}
+.section:nth-child(even) .section-inner {
+    color:#ddd;
+    background: #3333dd
+}
+.section:nth-child(even) h1, .section:nth-child(even) h2, .section:nth-child(even) h3, .section:nth-child(even){
+
+    color: #ddd;
+}
+.section:nth-child(odd) .section-inner {
+
+    background: #FFF
+}
+.section:nth-child(odd) h1, .section:nth-child(odd) h2 , .section:nth-child(odd) h3, .section:nth-child(odd){
+    color:#222;
+}
+
+.section-inner:hover {
+    opacity:0.2;
+}
+@media (max-width: 767px){
+    body {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .row-fluid{
+        padding-left:20Px;
+    }
+}
