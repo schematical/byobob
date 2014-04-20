@@ -1,0 +1,22 @@
+{{> _header }}
+{{> _navbar }}
+<div class="page-header">
+    <h1>{{ section.name }}<small>{{ section.desc }}</small></h1>
+</div>
+
+    <h3>Namespace</h3>
+    {{ section.namespace }}
+
+    <h3>Name</h3>
+    {{ section.name }}
+
+    <h3>Desc</h3>
+    {{ section.desc }}
+
+    <h3>Image</h3>
+    {{ section.image }}
+
+<a class='btn btn-default btn-sm' href='{{ section.uri }}/edit'>
+    Edit
+</a>
+{{> _footer }}

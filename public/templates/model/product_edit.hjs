@@ -1,0 +1,54 @@
+{{> _header }}
+
+{{> _navbar }}
+
+<form role="form" action='/products/{{ product._id }}' method='POST' enctype="multipart/form-data">
+    
+        
+            <div class="form-group">
+                <label for="namespace">namespace</label>
+                <input name="namespace" type="namespace" class="form-control" id="namespace" placeholder="Enter namespace" value="{{ product.namespace }}">
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <label for="name">name</label>
+                <input name="name" type="name" class="form-control" id="name" placeholder="Enter name" value="{{ product.name }}">
+            </div>
+        
+    
+        
+            <textarea id="desc" name="desc" class="form-control" rows="3">{{ product.desc}}</textarea>
+        
+    
+        
+            <div class="form-group">
+                <label for="url">url</label>
+                <input name="url" type="url" class="form-control" id="url" placeholder="Enter url" value="{{ product.url }}">
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <label for="weight">weight</label>
+                <input name="weight" type="weight" class="form-control" id="weight" placeholder="Enter weight" value="{{ product.weight }}">
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <label for="section">section</label>
+                <select id="section" name='section' value='{{ product.section }}'>
+                    {{# sections }}
+                        <options value='{{ _id }}'>{{ name }}</options>
+                    {{/ sections }}
+                </select>
+            </div>
+        
+    
+
+
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+{{> _footer }}

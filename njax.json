@@ -3,6 +3,7 @@
     "models":{
         "section":{
             "fields":{
+                "namespace":"namespace",
                 "name":"string",
                 "desc":"md",
                 "image":"s3-asset"
@@ -10,10 +11,15 @@
         },
         "product":{
             "fields":{
+                "namespace":"namespace",
                 "name":"string",
                 "desc":"md",
                 "url":"string",
-                "weight":"number"
+                "weight":"number",
+                "section":{
+                    "type":"ref",
+                    "ref":"section"
+                }
             }
         }
     }

@@ -8,6 +8,8 @@
     "dependencies": {
         "async" : "*",
         "underscore" : "*",
+        "mongoose":"*",
+        "errorhandler":"*",
         "markdown":"*",
         "connect-multiparty":"*",
         "njax": "git+ssh://git@github.com:schematical/njax.git#master",

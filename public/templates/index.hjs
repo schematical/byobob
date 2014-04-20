@@ -1,9 +1,8 @@
 {{> _header }}
-    {{> _navbar }}
-    {{# accounts }}
-        {{> _account }}
-    {{/ accounts }}
 
-    {{> _modal }}
-    {{> _meta_footer }}
+{{> _navbar }}
+    {{# sections }}
+        {{> _section }}
+    {{/ sections }}
+
 {{> _footer }}

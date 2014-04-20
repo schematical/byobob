@@ -1,98 +1,37 @@
 {{> _header }}
-        {{> _navbar }}
 
-
-<div class="account-container register stacked">
-
-    <div class="content clearfix">
-
-        <form action="/register" method="post">
+{{> _navbar }}
+<div class='row'>
+    <div class='col-md-4 col-md-offset-4'>
+        <form role="form" action="/register" method="post">
 
             <h1>Create Your Account</h1>
-<!--
-            <div class="login-social">
-                <p>Sign in using social network:</p>
-
-                <div class="twitter">
-                    <a href="#" class="btn_1">Login with Twitter</a>
-                </div>
-
-                <div class="fb">
-                    <a href="#" class="btn_2">Login with Facebook</a>
-                </div>
-            </div>-->
-
             {{# error }}
             <div class='alert alert-danger'>
                 {{ message }}
             </div>
             {{/ error }}
-            <div class="login-fields">
-
-                <p>Create your free account:</p>
-
-           <!--     <div class="field">
-                    <label for="firstname">First Name:</label>
-                    <input type="text" id="firstname" name="firstname" value="" placeholder="First Name" class="login" />
-                </div> &lt;!&ndash; /field &ndash;&gt;
-
-                <div class="field">
-                    <label for="lastname">Last Name:</label>
-                    <input type="text" id="lastname" name="lastname" value="" placeholder="Last Name" class="login" />
-                </div> &lt;!&ndash; /field &ndash;&gt;-->
-
-
-                <div class="field">
-                    <label for="email">Email Address:</label>
-                    <input type="text" id="email" name="email" value="" placeholder="Email" class="login"/>
-                </div> <!-- /field -->
-
-                <div class="field">
-                    <label for="password">Password:</label>
-                    <input type="password" id="password" name="password" value="" placeholder="Password" class="login"/>
-                </div> <!-- /field -->
-
-                <div class="field">
-                    <label for="confirm_password">Confirm Password:</label>
-                    <input type="password" id="confirm_password" name="confirm_password" value="" placeholder="Confirm Password" class="login"/>
-                </div> <!-- /field -->
-
-            </div> <!-- /login-fields -->
-
-            <div class="login-actions">
-
-				<span class="login-checkbox">
-					<input id="Field" name="Field" type="checkbox" class="field login-checkbox" value="First Choice" tabindex="4" />
-					<label class="choice" for="Field">I have read and agree with the Terms of Use.</label>
-				</span>
-
-                <button class="button btn btn-primary btn-large">Register</button>
-
-            </div> <!-- .actions -->
-
+            <div class="form-group">
+                <label for="username">Email address</label>
+                <input type="email"  name="username" class="form-control" id="username" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" name='password' id="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="password_confirm">Password</label>
+                <input type="password" class="form-control" id="password_confirm" placeholder="Confirm Password" name='password_confirm' >
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
         </form>
 
-    </div> <!-- /content -->
 
-</div> <!-- /account-container -->
-
-
-<!-- Text Under Box -->
-<div class="login-extra">
-    Already have an account? <a href="/login">Login</a>
-</div> <!-- /login-extra -->
-
-
-
-
-<!-- Le javascript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="/js/libs/jquery-1.8.3.min.js"></script>
-<script src="/js/libs/jquery-ui-1.10.0.custom.min.js"></script>
-<script src="/js/libs/bootstrap.min.js"></script>
-
-<script src="/js/Application.js"></script>
-
+        <!-- Text Under Box -->
+        <div class="login-extra">
+            Have an account? <a href="/login">Login</a><br/>
+        </div> <!-- /login-extra -->
+    </div>
+</div>
 
 {{> _footer }}

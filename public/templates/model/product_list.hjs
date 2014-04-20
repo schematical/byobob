@@ -1,0 +1,71 @@
+{{> _header }}
+
+{{> _navbar }}
+
+<table class="table">
+        <tr>
+            
+                <th>
+                    namespace
+                </th>
+            
+                <th>
+                    name
+                </th>
+            
+                <th>
+                    desc
+                </th>
+            
+                <th>
+                    url
+                </th>
+            
+                <th>
+                    weight
+                </th>
+            
+                <th>
+                    section
+                </th>
+            
+        </tr>
+        {{# product }}
+            <tr>
+                
+                    <td>
+                        {{ namespace }}
+                    </td>
+                
+                    <td>
+                        {{ name }}
+                    </td>
+                
+                    <td>
+                        {{ desc }}
+                    </td>
+                
+                    <td>
+                        {{ url }}
+                    </td>
+                
+                    <td>
+                        {{ weight }}
+                    </td>
+                
+                    <td>
+                        {{ section }}
+                    </td>
+                
+                
+                <td>
+                    <a class='btn btn-default btn-sm' href='/products/{{ namespace }}'>
+                        View
+                    </a>
+                </td>
+                
+            </tr>
+        {{/ product }}
+    </table>
+{{> _footer }}
+
