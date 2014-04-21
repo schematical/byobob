@@ -1,0 +1,16 @@
+<div class='row'>
+    <div class='col-md-4'>
+
+        <img style='height:100Px; margin: 20Px;' src='{{ LargeImage.URL }}' />
+    </div>
+    <div class='col-md-8'>
+        <h3>{{ ItemAttributes.Title }}</h3>
+        <form action='/products' method='post'>
+            <div class="btn-group">
+                <a href='http://www.youtube.com/results?search_query={{ ItemAttributes.Title }}' class="btn btn-default btn-sm" target='_blank'>Youtube</a>
+                <input type='submit' class="btn btn-default btn-sm" value='Create Product'/>
+                <input type='hidden' name='name' value='{{ ItemAttributes.Title }}'/>
+            </div>
+        </form>
+    </div>
+</div>

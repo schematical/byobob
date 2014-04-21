@@ -51,5 +51,10 @@
             </tr>
         {{/ section }}
     </table>
+
+     <a class='btn btn-default btn-block' href='/sections/new'>
+         Create New Section
+     </a>
+
 {{> _footer }}
 

@@ -41,7 +41,7 @@
                 <label for="section">section</label>
                 <select id="section" name='section' value='{{ product.section }}'>
                     {{# sections }}
-                        <options value='{{ _id }}'>{{ name }}</options>
+                        <option {{# _selected }}selected='true'{{/ _selected}} value='{{ _id }}'>{{ name }}</option>
                     {{/ sections }}
                 </select>
             </div>

@@ -67,5 +67,10 @@
             </tr>
         {{/ product }}
     </table>
+
+     <a class='btn btn-default btn-block' href='/products/new'>
+         Create New Product
+     </a>
+
 {{> _footer }}
 

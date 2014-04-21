@@ -21,6 +21,41 @@
                     "ref":"section"
                 }
             }
+        },
+        "application":{
+            "fields":{
+                "namespace":"namespace",
+                "name":"string",
+                "desc":"md",
+                "url":"string",
+                "owner":{
+                    "type":"ref",
+                    "ref":"account"
+                }
+            }
+        },
+        "accessToken":{
+            "fields":{
+                "perms":"array",
+                "token":"string",
+                "application":{
+                    "type":"ref",
+                    "ref":"application"
+                },
+                "account":{
+                    "type":"ref",
+                    "ref":"account"
+                }
+            }
+        },
+        "requestCode":{
+            "fields":{
+                "code":"string",
+                "application":{
+                    "type":"ref",
+                    "ref":"application"
+                }
+            }
         }
     }
 }
